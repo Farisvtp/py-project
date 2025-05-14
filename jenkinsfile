@@ -28,7 +28,7 @@ pipeline {
             }
         }
         
-        stage('Deloy') {
+        stage('Deploy') {
             steps {
                 sh 'docker run -d -p 5001:5001 faris7/flask-webapp'
             }
